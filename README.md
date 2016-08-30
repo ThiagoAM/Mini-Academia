@@ -13,7 +13,7 @@ Na Ultima vez que rodei o programa, utilizei:
 > Sistema Operacional: Windows 8.1 Pro;
 > IDE: Dev C++ 5.11;
 > Compilador: GCC 4.9.2 64/32 bits;
-> conico.c na diretório include do Dev C++.
+> conico.c no diretório include do Dev C++.
 
 Infelizmente, pelo programa estar incompleto (meu parceiro desistiu do curso durante o desenvolvimento), lembro que este
 projeto tirou nota 7,0. Nada mal para o nível de dificuldade da matéria ^^.
