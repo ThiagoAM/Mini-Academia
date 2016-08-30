@@ -7,13 +7,13 @@ Este projeto não tem o objetivo de demonstrar conhecimento algum, mas sim ser e
 
 Para testar:
 > Compile com GCC-4.9.2 ou posterior;
-> Inclua a biblioteca conio.c
+> Inclua a biblioteca conio.c.
 
 Na Ultima vez que rodei o programa, utilizei:
-> Sistema Operacional: Windows 8.1 Pro
-> IDE: Dev C++ 5.11
-> Compilador: GCC 4.9.2 64/32 bits.
-> conico.c na diretório include do Dev C++
+> Sistema Operacional: Windows 8.1 Pro;
+> IDE: Dev C++ 5.11;
+> Compilador: GCC 4.9.2 64/32 bits;
+> conico.c na diretório include do Dev C++.
 
 Infelizmente, pelo programa estar incompleto (meu parceiro desistiu do curso durante o desenvolvimento), lembro que este
 projeto tirou nota 7,0. Nada mal para o nível de dificuldade da matéria ^^.
