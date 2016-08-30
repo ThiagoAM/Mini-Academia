@@ -3630,12 +3630,13 @@ void paraSairDigiteSair()// MUDAR NOMEX
 //     Retorno   : Nenhum.
 void limpaTelaCordenada(int x, int y, int tamanho,char parametro)
 {
-     int aux=0;
+	clrscr();
+     /*int aux=0;
      gotoxy(x,y);
      for (aux=0;aux<=tamanho;aux++)
      {
          printf("%c",parametro);
-     }
+     }*/
 }
 // Subprograma x
 //     Objetivo  : Limpar a tela com um efeito horizontal.
@@ -3643,15 +3644,16 @@ void limpaTelaCordenada(int x, int y, int tamanho,char parametro)
 //     Retorno   : Nenhum.
 void limpaTelaEfeito()
 {
-     int aux=0, cont=14;
+	clrscr();
+     /*int aux=0, cont=14;
      for (aux=14;aux>0;aux--)
      {
          limpaTelaCordenada(1,aux,79,' ');
          if (aux > 2)
             limpaTelaCordenada(1,cont,79,' ');
          cont++;
-         sleep(25);
-     }
+         //sleep(25);
+     }*/
 }       
 // Subprograma x
 //     Objetivo  : Apresentar o codigo gerado.
@@ -3665,7 +3667,7 @@ void mostraCodigoGerado(int contador)
       {
           gotoxy(20,10+aux);                                             
           printf("                                          ");
-          sleep(15);
+          //sleep(15);
       }
       gotoxy(30,15);
       printf("CODIGO DA SERIE : %d",contador+1000);
@@ -3722,7 +3724,7 @@ void cadastroConcluido(int cor)
       {
           gotoxy(23,10+aux);
           printf("                                  ");
-          sleep(15);
+          ////sleep(1);
       }
       gotoxy(24,15);
       printf("CADASTRO CONCLUIDO COM SUCESSO!\n\n\n\n");
@@ -3735,15 +3737,16 @@ void cadastroConcluido(int cor)
 //     Retorno   : Nenhum.
 void limpaTelaEfeitoVertical()
 {
-     int aux=0, cont=41;
+	clrscr();
+     /*int aux=0, cont=41;
      for (aux=40;aux>0;aux--)
      {
          limpaTelaCordenadaVertical(aux,25,25,' ');
          if (aux > 0)
             limpaTelaCordenadaVertical(cont,25,25,' ');
          cont++;
-         sleep(7); 
-     }
+         //sleep(7); 
+     }*/
 }    
 // Subprograma x
 //     Objetivo  : Insetir caracteres em qualquer lugar da tela verticalmente.
@@ -3751,13 +3754,13 @@ void limpaTelaEfeitoVertical()
 //     Retorno   : Nenhum.
 void limpaTelaCordenadaVertical(int x, int y, int tamanho,char parametro)
 {
-     int aux=0;
+     /*int aux=0;
      gotoxy(x,y);
      for (aux=0;aux<=tamanho;aux++)
      {
          gotoxy(x,y-aux);
          printf("%c",parametro);
-     }   
+     }*/ 
 }   
 // Subprograma x
 //     Objetivo  : Apresentar uma mensagem de digite F11
@@ -3860,7 +3863,7 @@ void criaMiniTelaAzul(int cor) // MUDAR NOMEX
      {
           gotoxy(23,10+aux);
           printf("                                  ");
-          sleep(15);
+          ////sleep(15);
      }
 }
 // Subprograma x
@@ -4089,25 +4092,25 @@ void fazMolduraF11()
      {
        gotoxy(22,aux+10);
        printf("%c",219);
-       sleep(1);
+       ////sleep(1);
      }
      for (aux=0; aux < 11; aux++)    // vertical
      {
        gotoxy(57,aux+10);
        printf("%c",219);
-       sleep(1);
+       ////sleep(1);
      }
      for (aux=0; aux < 36; aux++)  // horizontal
      {
        gotoxy(22+aux,9);
        printf("%c",220);
-       sleep(1);
+       ////sleep(1);
      }
      for (aux=0; aux < 36; aux++) // horizontal
      {
        gotoxy(22+aux,21);
        printf("%c",223);
-       sleep(1);
+       ////sleep(1);
      }
 }
 // Subprograma x
@@ -4122,7 +4125,7 @@ void criaGrandeTelaAzul(int cor)
      {
           gotoxy(16,7+aux);
           printf("                                                 ");
-          sleep(15);
+          ////sleep(15);
      }
      textcolor(WHITE);
 }
@@ -4562,35 +4565,35 @@ void fazListagemSeries(struct dadosSerie *pEstrutura,int linha)
      textcolor(240);//128 48
      gotoxy(1,1);
      printf("    |        NOME DA SERIE:            |   CODIGO   |   DURACAO   |  CALORIAS   ");
-     sleep(1);
+     ////sleep(1);
      gotoxy(1,2);
      printf(" N  |                                  |            |  (minutos)  |             ");
-     sleep(1);
+     ////sleep(1);
      fazMolduraListagemSeries(linha);
      gotoxy(2,5+linha);
      textcolor(240);
      printf("%d",linha+1);
-     sleep(1);
+     ////sleep(1);
      gotoxy(6,5+linha);
      textcolor(31);
      //printf("%s",pNome);
      printf("%s",pEstrutura->nomeSerie);
-     sleep(1);
+     ////sleep(1);
      gotoxy(45,5+linha);
      textcolor(95);
     // printf("%d",codigo);  
      printf("%d",pEstrutura->codigo);
-     sleep(1);
+     //sleep(1);
      gotoxy(60,5+linha);
      textcolor(47);
      //printf("%d",duracao);
      printf("%d",pEstrutura->duracao);
-     sleep(1);
+     //sleep(1);
      gotoxy(71,5+linha);
      textcolor(79);
      //printf("%3.1f",calorias);
      printf("%3.1f",pEstrutura->calorias);
-     sleep(1);
+     //sleep(1);
 }
 // Subprograma x
 //     Objetivo  : Pedir qual número da lista o usurario deseja alterar.
@@ -4605,15 +4608,15 @@ int pedeNumeroSerieAlterar(int linha) //PAREIX
      {
          gotoxy(1,(linha+6)+aux);
          printf("                                                                                ");
-         sleep(1);
+         //sleep(1);
      }
      gotoxy(21,linha+7);
      printf("DIGITE O NUMERO DA SERIE QUE DESEJA SELECIONAR!");
-     sleep(1);
+     //sleep(1);
      gotoxy(36,linha+9);
      textcolor(270);
      printf("             ");
-     sleep(1);
+     //sleep(1);
      gotoxy(39,linha+6);
      opcao = leValidaNumeroLista(0,linha,4);
      return opcao;
@@ -4719,7 +4722,7 @@ void nenhumDadoEncontrado()
      {
           gotoxy(23,10+aux);
           printf("                                  ");
-          sleep(15);
+          //sleep(15);
      }
      gotoxy(29,15);
      printf("NENHUM DADO ENCONTRADO!");
@@ -4878,13 +4881,13 @@ void fazListagemClientes(struct cliente *pEstrutura,int linha)
      gotoxy(2,5+linha);
      textcolor(240);
      printf("%d",linha+1);
-     sleep(1);
+     //sleep(1);
 //----------CPF------------ 
      gotoxy(6,5+linha);
      textcolor(31);
      //printf("%s",pCpf);
      printf("%s",pEstrutura->cpf);
-     sleep(1);
+     //sleep(1);
 //----------NOME------------ 
      textcolor(47);
      //if (strlen(pNome) >= 15)
@@ -4896,13 +4899,13 @@ void fazListagemClientes(struct cliente *pEstrutura,int linha)
      gotoxy(30,5+linha);
      //printf("%0.14s",pNome); 
      printf("%0.14s",pEstrutura->nome);  
-     sleep(1);
+     //sleep(1);
 //----------PESO------------        
      gotoxy(50,5+linha);
      textcolor(63);
     // printf("%3.1f",peso);
      printf("%3.1f",pEstrutura->peso);
-     sleep(1);
+     //sleep(1);
 //----------SEXO------------        
      gotoxy(59,5+linha);
      textcolor(79);
@@ -4920,7 +4923,7 @@ void fazListagemClientes(struct cliente *pEstrutura,int linha)
                       break;
                  }
      }
-     sleep(1);
+     //sleep(1);
 //----------DATA------------      
      gotoxy(71,5+linha);
      textcolor(95);
@@ -5158,19 +5161,19 @@ void fazListagemAtividades(tipoAtividade *estrutura,int linha)
      gotoxy(2,5+linha);
      textcolor(240);
      printf("%d",linha+1);
-     sleep(1);
+     //sleep(1);
 //----------CPF------------ 
      gotoxy(6,5+linha);
      textcolor(31);
      //printf("%s",pCpf);
      printf("%s",estrutura->cpf);
-     sleep(1);
+     //sleep(1);
 //----------CODIGO------------ 
      textcolor(47);
      gotoxy(32,5+linha);
      //printf("%d",codigo);  
      printf("%d",estrutura->codigo);
-     sleep(1);
+     //sleep(1);
 //----------DATA------------      
      gotoxy(43,5+linha);
      textcolor(95);
@@ -5182,7 +5185,7 @@ void fazListagemAtividades(tipoAtividade *estrutura,int linha)
      textcolor(79);
      //printf("%s",pHora);
      printf("%s",estrutura->hora);
-     sleep(1);
+     //sleep(1);
 }
 // Subprograma x
 //     Objetivo  : 
@@ -5767,22 +5770,22 @@ void listaTempResumo(int *pDia,int *pMes, int *pAno, float *pCalorias,int *pTemp
      gotoxy(2,5+linha);
      textcolor(240);
      printf("%d",linha+1);
-     sleep(1);
+     //sleep(1);
 //----------DATA------------ 
      gotoxy(10,5+linha);
      textcolor(31);
      printf("%d/%d%/%d",*pDia,*pMes,*pAno);
-     sleep(1);
+     //sleep(1);
 //----------TOTAL DE CALORIAS------------ 
      textcolor(47);
      gotoxy(35,5+linha);
      printf("%3.2f",*pCalorias);  
-     sleep(1);
+     //sleep(1);
 //----------TOTAL DE TEMPO------------        
      gotoxy(64,5+linha);
      textcolor(63);
      printf("%d minutos",*pTempo);
-     sleep(1);
+     //sleep(1);
 }
 // Subprograma x
 //     Objetivo  : 
