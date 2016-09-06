@@ -18,7 +18,7 @@ Na Ultima vez que rodei o programa, utilizei:
 Infelizmente, pelo programa estar parcialmente incompleto (meu parceiro desistiu do curso durante o desenvolvimento), lembro que este
 projeto tirou nota 7,0. Nada mal para o nível de dificuldade da matéria ^^.
 Me orgulho muito deste projeto, pois foi nele que eu aprendi a gostar de programar.
-Agradeço o professor e doutor Vandor Vilardi Rissoli por lecionar esta matéria com excelência!
+Agradeço o professor e doutor Vandor Vilardi Rissoli por lecionar esta disciplina com excelência!
 
 
 
